@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+}
+.container {
+  position: relative;
+  padding: 100px 150px;
+}
+.container .t-patt {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .b-patt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container .top {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.container .top .left,
+.container .top .right {
+  flex: 1;
+}
+.container .top .left h1 {
+  font-size: 70px;
+  color: hsl(300, 43%, 22%);
+  margin: 0 0 25px;
+}
+.container .top .left p {
+  color: hsl(303, 10%, 53%);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.container .top .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.container .top .right .rate {
+  width: 85%;
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 7px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 16px;
+}
+.container .top .right .rate:first-child {
+  align-self: flex-start;
+}
+.container .top .right .rate:nth-child(3) {
+  align-self: flex-end;
+}
+.container .top .right .rate .stars {
+  margin-right:  30px;
+}
+.container .top .right .rate .stars img:not(:last-child) {
+  margin-right: 5px;
+}
+.container .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  gap: 25px;
+  height: 50vh;
+}
+.container .bottom .card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 7px;
+  padding: 25px;
+  width: 350px;
+}
+.container .bottom .card {
+  flex: 1;
+}
+.container .bottom .card:first-child {
+  align-self: flex-start;
+} 
+.container .bottom .card:nth-child(3) {
+  align-self: flex-end;
+} 
+.container .bottom .card .info {
+  display: flex;
+  align-items: center;
+}
+.container .bottom .card .info img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.container .bottom .card .info h4 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.container .bottom .card .info span {
+  color: hsl(333, 80%, 67%);
+  font-size: 14px;
+} 
+.container .bottom .card p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+}
